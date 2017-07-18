@@ -241,7 +241,7 @@ Conclusion
 
 Hope you will find this assignment interesting.
 
-We put so much staff here because we want you to focus on exercise you find most exciting to you.
+We put so much stuff here because we want you to focus on exercise you find most exciting to you.
 
 And no matter how far you will decide to go through the assignment we would love to hear feedback from you.
 
