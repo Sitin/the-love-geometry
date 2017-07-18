@@ -96,8 +96,8 @@ Step 2. Show Me Your Love
 -------------------------
 
 The exercise will be completed when there will be a text area input for a love story and the text field with the
-corresponding javascript structure. You can parse the stories automatically each time user changes the text or add the
-button which compile the written piece.
+corresponding javascript structure. You should parse the stories automatically each time when user changes the text
+(this is usually called "live edit").
 
 There should be a minimal error reporting in case when user enters invalid love statements.
 
