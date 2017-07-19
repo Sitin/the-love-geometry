@@ -32,13 +32,13 @@ skills.
 Get Ready for PEG
 -----------------
 
-Take a look at [pyPEG parser](https://fdik.org/pyPEG/) it's a Python parser for
+Take a look at [pyPEG](https://fdik.org/pyPEG/). It's a Python parser for
 [parser expression grammars](https://www.wikiwand.com/en/Parsing_expression_grammar) which is very similar to
 context-free grammars you may know from the Computer Science courses.
 
 Don't be afraid! It's not as scary as it seems (:
 
-It may be hard to design a grammar at the first time. There is a common library for Javascript which has a
+It may be hard to design a grammar at the first time. There is a similar library for Javascript which has a
 [live editor](https://pegjs.org/online) where you can start to play with grammar definitions.
 
 Step 1. The Language of Love and Destruction

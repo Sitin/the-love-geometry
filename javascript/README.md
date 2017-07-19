@@ -32,7 +32,7 @@ skills.
 Get Ready for PEG
 -----------------
 
-Take a look at [PEGjs parser](https://pegjs.org/) it's a Javascript parser for
+Take a look at [PEGjs](https://pegjs.org/). It's a Javascript parser for
 [parser expression grammars](https://www.wikiwand.com/en/Parsing_expression_grammar) which is very similar to
 context-free grammars you may know from the Computer Science courses.
 
