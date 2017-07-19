@@ -29,7 +29,7 @@ skills.
 1. If project has prerequisites (Node.js, NPM, Angular CLI et c.) there should be a how-to manual for installing them.
 1. You can dockerize your application if you want. It will give you a few extra credits.  
 
-Get ready for PEG
+Get Ready for PEG
 -----------------
 
 Take a look at [PEGjs parser](https://pegjs.org/) it's a Javascript parser for
@@ -251,6 +251,17 @@ There will be no more Mary, so, we have to remove the empty “Mary” column:
 | Vasya    |     |   -   |           |      |
 | Lyubomir | +/- |       |    -/?    |      |
 | Ulises   |     |   +   |           |  +   |
+
+Step 6. The End of Love (optional)
+----------------------------------
+
+Write end-to-end tests for all completed steps.
+
+We will evaluate the grade for this exercise looking not only to the number of test cases but also on their
+completeness. It is always better to get more with less efforts.
+
+You can use any reasonable testing solution you want (we prefer Selenium and Chrome webdriver). Note that the tests
+should run on our environment and you have to include installation manual for all the tools you use. 
 
 Conclusion
 ----------
