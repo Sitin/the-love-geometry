@@ -92,6 +92,17 @@ Node.js has built in `assert` module which may be sufficient if you are not expe
 
 You should provide a description for each of your test cases.
 
+### On the Meaning of Love
+
+Here we want to disambiguate meaning of term we use in the document.
+ 
+A *state of love*, the *love case* or the *situation of love* is the order of things described in a one sentence. We can
+think about it as a snapshot of relations.
+
+A *love story* is a sequence on love states.
+
+Why not *story of relations*? Well, in our pocket universe loathing can be thought as just a negative form of love. 
+
 Step 2. Show Me Your Love
 -------------------------
 
@@ -126,14 +137,14 @@ A loves A.
 What additional constrains should we apply to the language semantics? Define those constrains and describe them (either
 at the `README.md` or inside your SPA).
  
-Implement the validator that checks parsed structures and shows messages in case when user writes a meaningless story.
-You also can integrate some checks into the grammar but the parser should not swallow errors (e.g. if user does
+Implement the validator that checks parsed structures and shows messages in case when user writes a meaningless state of
+love. You also can integrate some checks into the grammar but the parser should not swallow errors (e.g. if user does
 something you consider as wrong he or she should receive an error).
 
 Step 4. Circles of Affection (optional)
 ---------------------------------------
 
-Sometimes we have a love story with circles of feeling of some type. E.g.:
+Sometimes we have a state of love with circles of feeling of some type. E.g.:
 
 ```
 A loves B, B loves C and C loves A.
@@ -149,9 +160,9 @@ The third is a high self-esteem. Have you forbidden that kind of relations at th
 your decision. Or keep it. It's all up to you.
 
 Now. In order to complete this exercise you have to design and implement an algorithm which finds all circles in a given
-love story.
+sate of love.
 
-We want you to create a block at the page where you will list such circles for the given love stories (in addition to
+We want you to create a block at the page where you will list such circles for the given love story (in addition to
 the area with listed structures from the Step 2).
 
 Step 5. The Matrix of Love (optional)
@@ -159,9 +170,9 @@ Step 5. The Matrix of Love (optional)
 
 Now let's have some fan!
 
-How about to create a table representation of the state of love?
+How about to create a table representation for a given state of love?
 
-Let's say we have the following story:
+Let's say we have the following situation:
 
 ```
 Lyubomir loves Ron, Ron hates Lubomyr
@@ -194,7 +205,7 @@ Ulises hates Theodoric.
 Much better!
 
 To complete this assignment you should create a component which renders such table according to the currently described
-structures. Which means there may be several such tables at the page. 
+structures. Which means there may be several such tables at the page since one story may consist several states. 
 
 To have all possible credits you also have to introduce `mutually` keyword to the love language parser. 
 
