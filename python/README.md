@@ -2,7 +2,7 @@ Home Assignment: The Love Geometry
 ==================================
 
 Here is the Love Geometry project consisting several steps which graded independently. The necessary exercises are
-[Step 1](#step-1-the-language-of-love-and-destruction) and [Step 2](#step-2-show-me-your-love), everything else is
+[Step 1](#step-1-the-language-of-love-and-destruction) and [Step 2](#step-2-show-me-your-love) everything else is
 optional.
 
 By completing each step of this home assignment you proof that you have some valuable feature. So, it's ok to not to
@@ -26,31 +26,20 @@ can request GitHub account which should be invited to).
 1. There should be an OBVIOUS way to run the project described in the `README.md` provided in the root of the
 repository/bundle. All command line steps should be described as if you are talking to a person without programming
 skills.
-1. If project has prerequisites (Node.js, NPM, Angular CLI et c.) there should be a how-to manual for installing them.
-1. You can dockerize your application if you want. It will give you a few extra credits.  
+1. If project has prerequisites there should be a how-to manual for installing them.
+1. We want you to use Python 3.5+.
 
 Get Ready for PEG
 -----------------
 
-Take a look at [PEGjs parser](https://pegjs.org/) it's a Javascript parser for
+Take a look at [PEGjs parser](https://fdik.org/pyPEG/) it's a Python parser for
 [parser expression grammars](https://www.wikiwand.com/en/Parsing_expression_grammar) which is very similar to
 context-free grammars you may know from the Computer Science courses.
 
 Don't be afraid! It's not as scary as it seems (:
 
-There is a nice [intro](https://coderwall.com/p/316gba/beginning-parsers-with-peg-js) you can look trough.
-
-Step 0. Pick Your Favorite Tool
--------------------------------
-
-The project should come in a form of a single page web application. You are free to use any framework you want but we
-encourage you to use Angular 4 or React (+ something).
-
-Note that we do care about design and usability but this assignment tests your engineering skills. So, the UI/UX should
-help you to better express your solution and us to better asses them.
-
-We think that all exercises may be implemented as evolution of one page. Still you free to ad several sections. But in
-that case don't forget about navigation.
+It may be hard to design a grammar at the first time. There is a common library for Javascript which has a
+[live editor](https://pegjs.org/online) where you can start to play with grammar definitions.
 
 Step 1. The Language of Love and Destruction
 --------------------------------------------
@@ -72,7 +61,7 @@ Note that there are **multiline** sentences (like the last one)!
 We want to write a parser for this language that for each line returns a structure of relations of people mentioned in
 it. Such structure can be (but not necessary) like the following:
 
-```javascript
+```python
 [
   {
     'A': { 'loves': ['B'] },
@@ -92,10 +81,16 @@ We do not give you a formal definition of this language. Instead we want you to 
 spirit.
 
 For this part of the assignment the sufficient representation does not require any user interface. Instead we want the
-parser to be implemented as a module and covered by test cases. We do not restrict you by any testing framework since
-Node.js has built in `assert` module which may be sufficient if you are not experience with testing.
+parser to be implemented as a module and covered by test cases. We do not restrict you by any testing framework, pick
+what you fits you best.
 
 You should provide a description for each of your test cases.
+
+### Completion Checklist
+
+- [ ] PEG parser for the love story language.
+- [ ] Unit tests for the parser.
+- [ ] Installation and running how-to manual in the `README.md`.
 
 ### On the Meaning of Love
 
@@ -111,17 +106,32 @@ Why not *story of relations*? Well, in our pocket universe loathing can be thoug
 Step 2. Show Me Your Love
 -------------------------
 
-The exercise will be completed when there will be a text area input for a love story and the text field with the
-corresponding javascript structure. You should parse the stories automatically each time when user changes the text
-(this is usually called "live edit").
+Now let's create an ecosystem for our language.
 
-There should be a minimal error reporting in case when user enters invalid love statements.
+First of all we want yo to create a simple web application (pick whatever you want but we think
+[Flask](http://flask.pocoo.org/) or [aiohttp](http://aiohttp.readthedocs.io/en/stable/) will be enough) with one API
+endpoint which receives a love story and responds with the parsed structure.
 
-You can use code highlights like [Code Mirror](https://codemirror.net/) if you want. I've used the one in my one of my
-[pet projects](http://takorogo.github.io/#/) when I was in love with graph databases and DSLs.
+The next thing is to write a simple client library that talks to that endpoint and parses written love stories to their
+structural representations. 
 
-This is a major task and if fully completed together with the [Step 1](#step-1-the-language-of-love-and-destruction)
-it should be enough to pass the grading threshold.
+There should be a minimal error reporting with HTTP codes and error descriptions in case when client sends invalid love
+statements.
+
+We also want you to create a simple [Jupyter Notebook](http://jupyter.org/) with a piece of the code which talks to the
+love story server and prints response in an easy readable way.
+
+### Completion Checklist
+
+- [ ] Server application that parses love stories.
+- [ ] Client library that talks to that server.
+- [ ] Jupyter notebook where we can play with the client and send requests to the server.
+- [ ] Manual that describes how to use the start the app and the notebook.
+
+### More Summits Ahead
+
+Completion of this task together with the [Step 1](#step-1-the-language-of-love-and-destruction) should be enough to
+pass the grading threshold.
 
 But why stop here? There are more challenges to complete. Besides, you may have some crucial errors in your solution
 you, don't see now. So, if I were you, I will take the next steps in order to get even more fun and confidence in your
@@ -132,7 +142,8 @@ Step 3. Find the Cheater (optional)
 
 This task is optional but it may be useful for later steps and also gives an important perspective on the DSL design. 
 
-As we can see from the [Step 1](#step-1-the-language-of-love-and-destruction) the syntax does not constrains us to write things like:
+As we can see from the [Step 1](#step-1-the-language-of-love-and-destruction) the syntax does not constrains us to write
+things like:
 
 ```
 A loves B but A hates B.
@@ -146,6 +157,18 @@ at the `README.md` or inside your SPA).
 Implement the validator that checks parsed structures and shows messages in case when user writes a meaningless state of
 love. You also can integrate some checks into the grammar but the parser should not swallow errors (e.g. if user does
 something you consider as wrong he or she should receive an error).
+
+It is up to you whether the semantic check has to be implemented in the parser library or at the server application.
+But we want to keep an ability to receive an unchecked (original) response. And, please, don't put the logic inside the
+controller.
+
+### Completion Checklist
+
+- [ ] Implement semantic validation on the parser or server application level.
+- [ ] Keep the possibility for the pure (unchecked) run of the parser.
+- [ ] Propagate errors to the client.
+- [ ] Document your decisions.
+- [ ] Add or update the code in the Jupyter notebook to test your solution.
 
 Step 4. Circles of Affection (optional)
 ---------------------------------------
@@ -165,11 +188,22 @@ The second one is a mutual loathing.
 The third is a high self-esteem. Have you forbidden that kind of relations at the
 [Step 3](#step-3-find-the-cheater-optional)? Well then you may reconsider your decision. Or keep it. It's all up to you.
 
-Now. In order to complete this exercise you have to design and implement an algorithm which finds all circles in a given
+In order to complete this exercise you have to design and implement an algorithm which finds all circles in a given
 sate of love.
 
-We want you to create a block at the page where you will list such circles for the given love story (in addition to
-the area with listed structures from the [Step 2](#step-2-show-me-your-love).
+We want you to create an API endpoint which responses with a list of such circles for a given love story, update the
+client library and extend the Jupyter notebook with a new snippet of code that tests this exercise.
+
+The algorithm itself can be implemented at the level of the parser library or as a part of the application.
+
+Whatever you do, don't put the logic inside the controller. Just don't.
+
+### Completion Checklist
+
+- [ ] Implement the algorithm that searches for affection circles.
+- [ ] Add the API endpoint.
+- [ ] Update the client library.
+- [ ] Add or update the code in the Jupyter notebook to test your solution.
 
 Step 5. The Matrix of Love (optional)
 -------------------------------------
@@ -210,10 +244,25 @@ Ulises hates Theodoric.
 
 Much better!
 
-To complete this assignment you should create a component which renders such table according to the currently described
-structures. Which means there may be several such tables at the page since one story may consist several states. 
+To complete this assignment you should serve an HTML page with a form consisting a text area field for a love story and
+a submit button. Once pressed we want you to render a page with love representation tables which corresponds to a
+written love story.
 
-To have all possible credits you also have to introduce `mutually` keyword to the love language parser. 
+You can use AJAX requests or reload the page with the submitted GET or POST parameters. It's completely up to you.
+ 
+In case of a wrong input you should show corresponding errors.
+
+To have all possible credits you also have to introduce `mutually` keyword to the love language parser.
+
+### Completion Checklist
+
+- [ ] Create a web page with a text area for a love story and a submit button.
+- [ ] Render love representation tables for a submitted story.
+- [ ] Document your solution in the `README.md`.
+
+### Excellent Mark Checklist 
+
+- [ ] Add `mutual` keyword to the love story language.
 
 ### The Love Matrix Behaviour
  
@@ -252,17 +301,6 @@ There will be no more Mary, so, we have to remove the empty “Mary” column:
 | Vasya    |     |   -   |           |      |
 | Lyubomir | +/- |       |    -/?    |      |
 | Ulises   |     |   +   |           |  +   |
-
-Step 6. The End of Love (optional)
-----------------------------------
-
-Write end-to-end tests for all completed steps.
-
-We will evaluate the grade for this exercise looking not only to the number of test cases but also on their
-completeness. It is always better to get more with less efforts.
-
-You can use any reasonable testing solution you want (we prefer Selenium and Chrome webdriver). Note that the tests
-should run on our environment and you have to include installation manual for all the tools you use. 
 
 Conclusion
 ----------
