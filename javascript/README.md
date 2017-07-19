@@ -44,7 +44,7 @@ Step 0. Pick Your Favorite Tool
 -------------------------------
 
 The project should come in a form of a single page web application. You are free to use any framework you want but we
-encourage you to use Angular 4 and React (+ something).
+encourage you to use Angular 4 or React (+ something).
 
 Note that we do care about design and usability but this assignment tests your engineering skills. So, the UI/UX should
 help you to better express your solution and us to better asses them.
@@ -82,7 +82,7 @@ it. Such structure can be (but not necessary) like the following:
     'A': { 'hates': ['B'], 'loves': ['D'] },
     'B': { 'loves': ['C'] },
     'D': { 'hates': 'A' }
-  },
+  }
 ]
 ```
 
