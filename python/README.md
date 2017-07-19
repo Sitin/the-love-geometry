@@ -32,7 +32,7 @@ skills.
 Get Ready for PEG
 -----------------
 
-Take a look at [PEGjs parser](https://fdik.org/pyPEG/) it's a Python parser for
+Take a look at [pyPEG parser](https://fdik.org/pyPEG/) it's a Python parser for
 [parser expression grammars](https://www.wikiwand.com/en/Parsing_expression_grammar) which is very similar to
 context-free grammars you may know from the Computer Science courses.
 
