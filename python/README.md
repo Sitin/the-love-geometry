@@ -159,8 +159,8 @@ love. You also can integrate some checks into the grammar but the parser should 
 something you consider as wrong he or she should receive an error).
 
 It is up to you whether the semantic check has to be implemented in the parser library or at the server application.
-But we want to keep an ability to receive an unchecked (original) response. And, please, don't put the logic inside the
-controller.
+But we want to keep an ability to receive an unchecked (original) response. And, please, [don't put the logic inside the
+controller](https://www.hughgrigg.com/posts/keep-controllers-thin/).
 
 ### Completion Checklist
 
@@ -196,7 +196,7 @@ client library and extend the Jupyter notebook with a new snippet of code that t
 
 The algorithm itself can be implemented at the level of the parser library or as a part of the application.
 
-Whatever you do, don't put the logic inside the controller. Just don't.
+Whatever you do, don't put the logic inside the controller. Just [don't](https://www.hughgrigg.com/posts/keep-controllers-thin/).
 
 ### Completion Checklist
 
