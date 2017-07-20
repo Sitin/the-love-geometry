@@ -151,8 +151,8 @@ A loves B, A loves B, A loves B.
 A loves A.
 ```
 
-What additional constrains should we apply to the language semantics? Define those constrains and describe them (either
-at the `README.md` or inside your SPA).
+What additional constrains should we apply to the language semantics? Define those constrains and describe them in the
+`README.md`.
  
 Implement the validator that checks parsed structures and shows messages in case when user writes a meaningless state of
 love. You also can integrate some checks into the grammar but the parser should not swallow errors (e.g. if user does
