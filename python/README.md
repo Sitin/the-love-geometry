@@ -20,14 +20,17 @@ Technical Requirements
 
 Pay attention to the following requirements. They are simple but necessary for your success.
 
-1. The solution SHOULD come in a form of a code bundle (`*.tgz` or `*.zip`) or from the private GitHub repository (you
-can request GitHub account which should be invited to).
+1. The solution SHOULD come in a form of a code bundle (`*.tgz` or `*.zip`).
 1. You SHOULD not present this solution publicly. This will cause an immediate and inexcusable failure (:
 1. There should be an OBVIOUS way to run the project described in the `README.md` provided in the root of the
-repository/bundle. All command line steps should be described as if you are talking to a person without programming
+bundle. All command line steps should be described as if you are talking to a person without programming
 skills.
 1. If project has prerequisites there should be a how-to manual for installing them.
 1. We want you to use Python 3.5+.
+1. All UI solutions you create should be titled with your full name and the name of the project.
+   1. The first unit of your Jupyter notebook should include your full name at the heading unit.
+   1. All possible pages of your web application ([Step 5](#step-5-the-matrix-of-love-optional)) should include a
+      heading with your full name at the top. Also your full name should be the first thing at the page title.
 
 Get Ready for PEG
 -----------------
@@ -126,7 +129,7 @@ love story server and prints response in an easy readable way.
 - [ ] Server application that parses love stories.
 - [ ] Client library that talks to that server.
 - [ ] Jupyter notebook where we can play with the client and send requests to the server.
-- [ ] Manual that describes how to use the start the app and the notebook.
+- [ ] Manual that describes how to use the start the app and the notebook. 
 
 ### More Summits Ahead
 
@@ -258,7 +261,7 @@ To have all possible credits you also have to introduce `mutually` keyword to th
 
 - [ ] Create a web page with a text area for a love story and a submit button.
 - [ ] Render love representation tables for a submitted story.
-- [ ] Document your solution in the `README.md`.
+- [ ] Document your solution in the `README.md`. 
 
 ### Excellent Mark Checklist 
 

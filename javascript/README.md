@@ -20,14 +20,28 @@ Technical Requirements
 
 Pay attention to the following requirements. They are simple but necessary for your success.
 
-1. The solution SHOULD come in a form of a code bundle (`*.tgz` or `*.zip`) or from the private GitHub repository (you
-can request GitHub account which should be invited to).
+1. The solution SHOULD come in a form of a code bundle (`*.tgz` or `*.zip`).
 1. You SHOULD not present this solution publicly. This will cause an immediate and inexcusable failure (:
 1. There should be an OBVIOUS way to run the project described in the `README.md` provided in the root of the
-repository/bundle. All command line steps should be described as if you are talking to a person without programming
+bundle. All command line steps should be described as if you are talking to a person without programming
 skills.
 1. If project has prerequisites (Node.js, NPM, Angular CLI et c.) there should be a how-to manual for installing them.
-1. You can dockerize your application if you want. It will give you a few extra credits.  
+1. All sections of the application should include a heading with your full name at the top. Also your full name should
+be the first thing at the page title. 
+
+Notes on UX
+-----------
+
+You are the only person responsible for the UX design. We do not introduce additional restrictions not because we don't
+care about look and feel but because we want to know what completeness and usability means to you.
+
+Consider this: you need just 2 minutes to add Bootstrap to your application. 
+
+### Navigation
+
+All exercises can be implemented as an evolution of one main page. Still, if you complete a lot of optional exercises
+you may consider to break down the application into several sections. In that case don't forget about navigation and
+routing. 
 
 Get Ready for PEG
 -----------------
@@ -48,9 +62,6 @@ encourage you to use Angular 4 or React (+ something).
 
 Note that we do care about design and usability but this assignment tests your engineering skills. So, the UI/UX should
 help you to better express your solution and us to better asses them.
-
-We think that all exercises may be implemented as evolution of one page. Still you free to ad several sections. But in
-that case don't forget about navigation.
 
 Step 1. The Language of Love and Destruction
 --------------------------------------------
