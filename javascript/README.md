@@ -21,6 +21,9 @@ Technical Requirements
 Pay attention to the following requirements. They are simple but necessary for your success.
 
 1. The solution SHOULD come in a form of a code bundle (`*.tgz` or `*.zip`).
+1. The name of the bundle should be `love-geometry-<your full name>-v<version number>`. The version number starts from
+   `1`. We accept multiple versions of the assignment. The final grade will be calculated for the latest version of your
+   assignment.
 1. You SHOULD not present this solution publicly. This will cause an immediate and inexcusable failure (:
 1. There should be an OBVIOUS way to run the project described in the `README.md` provided in the root of the
 bundle. All command line steps should be described as if you are talking to a person without programming
