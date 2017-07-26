@@ -7,9 +7,9 @@ Here is the Lego Land project consisting several steps which graded independentl
 Steps [1](#step-1-warmup-blocks-optional) and [2](#step-2-warmup-rectangle-optional) are warmup exercises. You feel to
 skip them if you are sure in your ability to complete [Step 3](#step-3-lego-land).
 
-In [Step 4](#salus-per-aquam-optional) you can try yourself and create an SPA. This is a star-type of assignment. We do
-not expect you to finish it but we will love to work with a person who can see outside of the box of his competency and
-specialisation.
+In [Step 4](#step-4-salus-per-aquam-optional) you can try yourself and create an SPA. This is a star-type of assignment.
+We do not expect you to finish it but we will love to work with a person who can see outside of the box of his
+competency and specialisation.
 
 By completing each step of this home assignment you proof that you have some valuable feature. So, it's ok to not to
 complete all of them.
@@ -123,8 +123,8 @@ But if we make a screen wider then 3 B's may come in a one line:
 
 And thus the special background should be applied to them.
 
-Salus Per Aquam (optional)
---------------------------
+Step 4. Salus Per Aquam (optional)
+----------------------------------
 
 Put the whole your assignment into a single page application using React or Angular 2+ or any other framework. In this
 case different steps should be on different tabs or routes.
