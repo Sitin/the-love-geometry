@@ -12,3 +12,8 @@ Python
 ------
 
 Python version of the assignment can be found [here](./python).
+
+HTML & CSS
+----------
+
+Python version of the assignment can be found [here](./html).
