@@ -17,3 +17,8 @@ HTML & CSS
 ----------
 
 Python version of the assignment can be found [here](./html).
+
+QA
+--
+
+Python version of the assignment can be found [here](./qa).
