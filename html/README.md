@@ -1,5 +1,5 @@
-Lego Land
-=========
+Legolize
+========
 
 Here is the Lego Land project consisting several steps which graded independently. The necessary exercises is only a
 [Step 3](#step-3-lego-land), everything else is optional.
@@ -20,7 +20,7 @@ Technical requirements
 Pay attention to the following requirements. They are simple but necessary for your success.
 
 1. The solution SHOULD come in a form of a code bundle (`*.tgz` or `*.zip`).
-1. The name of the bundle should be `love-geometry-<your full name>-v<version number>`. The version number starts from
+1. The name of the bundle should be `legolize-<your full name>-v<version number>`. The version number starts from
    `1`. We accept multiple versions of the assignment. The final grade will be calculated for the latest version of your
    assignment.
 1. You SHOULD not present this solution publicly. This will cause an immediate and inexcusable failure (:
