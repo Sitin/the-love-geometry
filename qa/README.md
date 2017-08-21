@@ -50,7 +50,7 @@ those paragraphs you will decide not to fill give a clear explanation why it is 
 Step 3a. Case Sensitive
 -----------------------
 
-Write test scenarios for main user stories of Noisly application. Organise your scenarios in suites. Prioritize your
+Write test scenarios for main functionality of Noisly application. Organise your scenarios in suites. Prioritize your
 tests.
 
 You can skip this step if you want to use [Cucumber](https://cucumber.io/docs/reference) you can skip this task and
@@ -59,7 +59,7 @@ proceed to [Step 3b](#step-3b-cucumber-time).
 Step 3b. Cucumber Time
 ----------------------
 
-Write test scenarios for main user stories of Noisly application using [Cucumber](https://cucumber.io/docs/reference).
+Write test scenarios for main functionality of Noisly application using [Cucumber](https://cucumber.io/docs/reference).
 Organise your scenarios in feature suits each in a separate file.
 
 Add a short contents for Cucumber feature files in your PDF file or `README.md`. Prioritize your tests in that list.
